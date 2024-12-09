@@ -132,7 +132,7 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 
@@ -196,154 +196,6 @@ body {
     align-items: center;
 }
 
-/* สำหรับหน้าจอขนาดเล็ก (มือถือ) */
-@media (max-width: 600px) {
-    .sticky {
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-    }
-
-    .namebox {
-        flex-direction: column;
-        font-size: 20px;
-    }
-
-    .namebar {
-        font-size: 40px;
-        margin-left: 10px;
-    }
-
-    .box1 {
-        font-size: 20px;
-        margin: 20px;
-    }
-
-    .box2 {
-        font-size: 40px;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .about {
-        margin-left: 20px;
-    }
-
-    .r {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    .r2 {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 10px;
-        gap: 10px;
-    }
-
-    .skill,
-    .contact {
-        font-size: 50px;
-        margin-left: 20px;
-    }
-
-    .ig {
-        margin-left: 20px;
-        padding: 20px;
-    }
-
-    .aboutpic {
-        height: 200px;
-        width: auto;
-        margin: 10px auto;
-    }
-}
-
-/* สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .sticky {
-        height: auto;
-    }
-
-    .namebox {
-        font-size: 30px;
-    }
-
-    .namebar {
-        font-size: 50px;
-    }
-
-    .box1 {
-        font-size: 30px;
-    }
-
-    .box2 {
-        font-size: 60px;
-    }
-
-    .about {
-        margin-left: 50px;
-    }
-
-    .r {
-        width: 700px;
-        margin: 30px auto;
-    }
-
-    .r2 {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .skill,
-    .contact {
-        font-size: 60px;
-    }
-
-    .aboutpic {
-        height: 300px;
-        margin: 20px auto;
-    }
-}
-
-/* สำหรับหน้าจอขนาดใหญ่ (เดสก์ท็อป) */
-@media (min-width: 1025px) {
-    .sticky {
-        height: 100px;
-    }
-
-    .namebox {
-        font-size: 40px;
-    }
-
-    .namebar {
-        font-size: 60px;
-    }
-
-    .box1 {
-        font-size: 40px;
-    }
-
-    .box2 {
-        font-size: 80px;
-    }
-
-    .r {
-        width: 800px;
-    }
-
-    .r2 {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .skill,
-    .contact {
-        font-size: 80px;
-    }
-
-    .aboutpic {
-        height: 370px;
-    }
-}
-
  a,a:focus,.a:active {
     text-decoration: none;
  }
@@ -351,4 +203,3 @@ body {
  .p:hover p{
     color:yellow;
  }
-
