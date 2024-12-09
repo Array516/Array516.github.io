@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <section id="header">
+        <div>CE NEXTGEN#2</div> 
+        <a></a>
+
+    </section>
+
+    <div id="choose-one">PICK UP </div>
+
+    <section id="Click">
+        <a class="button"href="page2.html"></a>
+        <a class="button1" href="page3.html"></a>
+    </section>
+
+    <div id="snowflakes-container"></div>
+
+
+    
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const snowflakesContainer = document.getElementById('snowflakes-container');
+    const snowflakeCount = 100;
+
+    for (let i = 0; i < snowflakeCount; i++) {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.innerText = '.';
+        snowflake.style.left = `${Math.random() * 100}vw`;
+        snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        snowflake.style.animationDelay = `${Math.random() * 5}s`;
+        snowflake.style.fontSize = `${Math.random() * 1.5 + 1.5}em`;
+
+        snowflakesContainer.appendChild(snowflake);
+    }
+});
+
+</script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,158 @@
+/* General Body and Background Styling */
+body, html {
+    background-image: linear-gradient(to right, rgb(165, 0, 165), black);
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Header Section Styling */
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5px;
+    text-align: left;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(58, 0, 58), black);
+    color: white;
+    font-size: 30px;
+}
+
+/* Choose One Text Styling */
+#choose-one {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    font-size: 48px; /* Bigger text size */
+    font-weight: bold;
+    color: white;
+    animation: fadeMove 10s infinite;
+}
+
+/* Click Section and Button Styling */
+#Click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: calc(100% - 50px);
+}
+
+#Click a {
+    font-size: 0px;
+    padding: 150px 100px;
+    margin: 30px;
+    border: none;
+    background: url('https://i.pinimg.com/736x/3f/49/a4/3f49a431d621208520181c1a8025d2aa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover Effect */
+#Click a:hover {
+    border: 5px solid black;
+    background: url('https://down-th.img.susercontent.com/file/380e219277e64d4ce1b6e24eb81b331c');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 16px 16px 16px rgba(255, 255, 255, 0.2);
+}
+
+body {
+    background-color: #001f3d;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+#snowflakes-container {
+    position: absolute;
+    pointer-events:  none;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.snowflake {
+    position: absolute;
+    color: #fff;
+    font-size: 1.5em;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 80%;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        padding: 5px;
+    }
+
+    #choose-one {
+        font-size: 36px; /* Decrease font size */
+    }
+
+    #Click a {
+        padding: 100px 80px; /* Reduce button size */
+        margin: 20px; /* Adjust spacing */
+        font-size: 0px;
+    }
+}
+
+/* Media Query for Mobile Devices (Width 480px and Below) */
+@media (max-width: 480px) {
+    #header {
+        font-size: 16px; /* Further reduce font size */
+        text-align: center;
+    }
+
+    #choose-one {
+        font-size: 24px; /* Smaller text size for mobile */
+        top: 85%; /* Adjust position */
+    }
+
+    #Click {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    #Click a {
+        padding: 80px 60px; /* Smaller buttons */
+        margin: 15px;
+    }
+}
+
+/* Additional Tweaks for Very Small Screens (320px and Below) */
+@media (max-width: 320px) {
+    #choose-one {
+        font-size: 18px;
+    }
+
+    #Click a {
+        padding: 50px 40px;
+        margin: 10px;
+    }
+}
