@@ -70,14 +70,13 @@ html {
 }
 
 .box1 {
-    text-align: left;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    font-family: monospace;
-    margin: 100;
-    font-size: 40px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-family: monospace;
 }
+
 
 .box2 {
     text-align: left;
