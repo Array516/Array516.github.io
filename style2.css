@@ -57,7 +57,13 @@ section {
 }
 
 .box1 {
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-family: monospace;
+}
+
 }
 
 .about {
